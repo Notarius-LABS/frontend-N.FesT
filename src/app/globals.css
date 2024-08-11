@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  overflow: hidden;
-}
-
 .text-gradient {
   background: linear-gradient(to right, #6bcaff, #ec78ff);
   -webkit-background-clip: text;
@@ -21,7 +17,7 @@ html {
 }
 
 .slick-list {
-  overflow: visible;
+  overflow: initial;
 }
 
 .slick-prev,
@@ -30,7 +26,7 @@ html {
 }
 
 .center .slick-center .project {
-  transform: scale(1.2);
+  transform: scale(1.1);
   z-index: 10000;
-  transition: all 600ms ease-in-out;
+  transition: all 2.2s ease-in-out;
 }

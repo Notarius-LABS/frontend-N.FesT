@@ -11,10 +11,14 @@ export default function SliderComp() {
     centerMode: true,
     dots: false,
     infinite: true,
-    speed: 200,
+    speed: 2000,
     slidesToShow: 3,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     initialSlide: 0,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
@@ -44,12 +48,14 @@ export default function SliderComp() {
   };
 
   return (
-    <Slider ref={sliderRef} {...settings}>
-      <Card color="bg-green-500"></Card>
-      <Card color="bg-slate-500"></Card>
-      <Card color="bg-red-500"></Card>
-      <Card color="bg-sky-500"></Card>
-      <Card color="bg-slate-500"></Card>
-    </Slider>
+    <>
+      <Slider ref={sliderRef} {...settings}>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+      </Slider>
+    </>
   );
 }
