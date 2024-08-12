@@ -19,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={plusJakarta.className}>{children}</body>
+      <body
+        className={`${plusJakarta.className} bg-gradient-to-r from-[#030303] to-[#111340]`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

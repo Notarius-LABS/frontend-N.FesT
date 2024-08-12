@@ -1,21 +1,30 @@
 import React from "react";
-import ContainerCard from "../../fragments/ContainerCard/index";
-import CardCS from "@/components/core/Card/CardCS";
+import ContainerCard from "../../fragments/Container/index";
+import ComingSoonCard from "@/components/core/Card/ComingSoon";
 
 export default function Body() {
   return (
     <div className="min-h-[80vh] flex flex-col justify-between">
       <ContainerCard>
-        <CardCS label={true}></CardCS>
-        <CardCS label={true}></CardCS>
-        <CardCS label={true}></CardCS>
-        <CardCS label={true}></CardCS>
-        <CardCS label={true}></CardCS>
+        <ComingSoonCard label={true}></ComingSoonCard>
+        <ComingSoonCard label={true}></ComingSoonCard>
+        <ComingSoonCard label={true}></ComingSoonCard>
+        <ComingSoonCard label={true}></ComingSoonCard>
+        <ComingSoonCard label={true}></ComingSoonCard>
       </ContainerCard>
       <ContainerCard>
-        <CardCS label={false} size="w-[400px] h-[200px]"></CardCS>
-        <CardCS label={false} size="w-[400px] h-[200px]"></CardCS>
-        <CardCS label={false} size="w-[400px] h-[200px]"></CardCS>
+        <ComingSoonCard
+          label={false}
+          size="w-[400px] h-[200px]"
+        ></ComingSoonCard>
+        <ComingSoonCard
+          label={false}
+          size="w-[400px] h-[200px]"
+        ></ComingSoonCard>
+        <ComingSoonCard
+          label={false}
+          size="w-[400px] h-[200px]"
+        ></ComingSoonCard>
       </ContainerCard>
     </div>
   );

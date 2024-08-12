@@ -1,6 +1,6 @@
 import Card from "./index";
 
-export default function CardCS(props: any) {
+export default function ComingSoonCard(props: any) {
   const { label = true, size = "w-[210px] h-[280px]" } = props;
   return (
     <div className="h-[350px] text-white text-center flex flex-col justify-between mx-[18px]">

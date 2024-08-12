@@ -1,4 +1,4 @@
-import CardCS from "../../core/Card/CardCS";
+import CardCS from "../../core/Card/ComingSoon";
 import SeeAll from "../../core/Label/SeeAll";
 
 export default function ContainerCard({

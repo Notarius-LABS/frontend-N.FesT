@@ -4,7 +4,7 @@ import Footer from "../components/layouts/Footer/index";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-r from-[#030303] to-[#111340]">
+    <main className="">
       <Header></Header>
       <Body></Body>
       <Footer></Footer>

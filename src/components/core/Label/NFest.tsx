@@ -1,5 +1,5 @@
 export default function NFest(props: any) {
-  const { color } = props;
+  const { color = "text-[#6BCAFF]" } = props;
   return (
     <>
       <p className={`${color} text-5xl font-bold`}>
