@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Button from "../../core/Button/index";
+import WalletButton from "@/components/core/Button/Wallet";
 
 export default function Highlight() {
   return (
@@ -13,7 +14,7 @@ export default function Highlight() {
         </p>
       </div>
       <div className="flex items-center justify-center ">
-        <Button></Button>
+        <WalletButton></WalletButton>
       </div>
     </div>
   );

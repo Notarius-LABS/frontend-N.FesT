@@ -28,5 +28,5 @@
 .center .slick-center .project {
   transform: scale(1.1);
   z-index: 10000;
-  transition: all 2.2s ease-in-out;
+  transition: all 800ms ease-in-out;
 }

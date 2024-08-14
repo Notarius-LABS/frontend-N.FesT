@@ -1,4 +1,4 @@
-import Card from "../../core/Card/index";
+import Card from "./index";
 
 export default function CardContainer(props: any) {
   const { label = true, size = "w-[240px] h-[310px]" } = props;

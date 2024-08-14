@@ -1,6 +1,6 @@
 import React from "react";
 import ContainerCard from "../../fragments/Container/index";
-import CardContainer from "@/components/fragments/Container/Card";
+import CardContainer from "@/components/core/Card/Card";
 
 export default function Body() {
   return (

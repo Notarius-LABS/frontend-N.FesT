@@ -9,7 +9,6 @@ export default function SliderComp() {
   let settings = {
     className: "center",
     centerMode: true,
-    centerPadding: "0px",
     snapToGrid: false,
     swipeToSlide: true,
     dots: false,
