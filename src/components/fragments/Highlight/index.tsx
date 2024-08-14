@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Button from "../../core/Button/index";
+
 export default function Highlight() {
   return (
     <div className="px-[67px] flex justify-between items-center text-white bg-white bg-opacity-10 min-h-[105px]">

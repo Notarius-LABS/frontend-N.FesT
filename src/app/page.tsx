@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "../components/layouts/Header/index";
 import Body from "../components/layouts/Body/index";
 import Footer from "../components/layouts/Footer/index";

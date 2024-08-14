@@ -1,17 +1,17 @@
 import Link from "next/link";
-import { PropsWithChildren } from "react";
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 
-interface Props extends PropsWithChildren<any> {
-  size?: string;
-}
-
-export default function Button({ size = "px-[55px]" }: Props) {
+export default function Button() {
   return (
     <>
       <Link href="/">
-        <button className={`bg-[#EC78FF] rounded-full py-4 ${size} text-black`}>
+        <ConnectButton label="Connect to Wallet"   accountStatus={{
+          smallScreen: 'avatar',
+          largeScreen: 'full',
+        }} />
+        {/* <button className="bg-[#EC78FF] rounded-full py-4 px-[55px] text-black">
           Connect to Wallet
-        </button>
+        </button> */}
       </Link>
     </>
   );
