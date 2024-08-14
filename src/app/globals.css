@@ -1,0 +1,32 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-gradient {
+  background: linear-gradient(to right, #6bcaff, #ec78ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slick-list,
+.slick-slider,
+.slick-track {
+  padding-bottom: 30px;
+}
+
+.slick-list {
+  overflow: initial;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 10;
+}
+
+.center .slick-center .project {
+  transform: scale(1.1);
+  z-index: 10000;
+  transition: all 800ms ease-in-out;
+}
