@@ -1,14 +1,15 @@
 import Navbar from "../../../components/fragments/Navbar/Navbar";
-import Footer from "../../../components/layouts/Footer/index";
 import DetailEvent from "../../../components/fragments/Detail/index";
-import PaymentContainer from "@/components/fragments/Container/Payment";
-import Payment from "../../../components/layouts/Payment/index";
+import Footer from "../../../components/layouts/Footer/index";
+import Payment from "@/components/layouts/Payment";
 
 export default function DetailEventPage() {
   return (
     <div className="">
       <Navbar></Navbar>
-      <DetailEvent></DetailEvent>
+      <DetailEvent>
+        <Payment></Payment>
+      </DetailEvent>
       <Footer></Footer>
     </div>
   );

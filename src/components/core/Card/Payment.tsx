@@ -1,31 +1,44 @@
-import { useState } from "react";
+export interface Props {
+  text: string;
+  color: string;
+  textColor: string;
+  showPayment: boolean;
+  onClick: any;
+}
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { PropsWithChildren, useState } from "react";
 
-export default function PaymentCard(props: any) {
-  const { text, color, textColor } = props;
-  const [displayUI, setDisplayUI] = useState(false);
-  const handleUI = (e: any) => {
-    e.preventDefault();
-    setDisplayUI(!displayUI);
-  };
-
+export default function PaymentCard(props: PropsWithChildren<Props>) {
   return (
-    <button onClick={handleUI}>
+    <button onClick={props.onClick}>
       <div
-        className={`bg-[${color}] group bg-opacity-15 flex items-center h-[121px] w-[390px] justify-center gap-8 rounded-xl cursor-pointer hover:bg-opacity-100 hover:text-black`}
+        className={`${props.color} ${
+          props.showPayment !== true && "bg-opacity-15  text-white"
+        } flex items-center h-[121px] w-[390px] justify-center gap-8 rounded-xl cursor-pointer text-black`}
       >
-        <div>
-          <p className="text-4xl font-bold">{text}</p>
+        <div
+          className={`${
+            props.showPayment !== true && "bg-opacity-15 text-white"
+          } text-black flex flex-col items-start`}
+        >
+          <p className="text-4xl font-bold">{props.text}</p>
           <p>1.000 tiket tersedia</p>
         </div>
-        <p className={`text-2xl ${textColor} group-hover:text-black`}>
+        <p
+          className={`text-2xl ${props.textColor} ${
+            props.showPayment === true && "text-black"
+          }`}
+        >
           <span
-            className={`text-opacity-50 group-hover:text-black ${textColor}`}
+            className={`text-opacity-50 ${
+              props.showPayment === true && "text-black"
+            } ${props.textColor} bg-opacity-15 `}
           >
             Rp
           </span>
           1.200.000
         </p>
-        <p></p>
       </div>
     </button>
   );

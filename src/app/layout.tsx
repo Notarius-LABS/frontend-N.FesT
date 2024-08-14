@@ -7,8 +7,8 @@ const plusJakarta = Plus_Jakarta_Sans({
   weight: ["300", "600"],
 });
 
-import '@rainbow-me/rainbowkit/styles.css';
-import { Providers } from './providers';
+import "@rainbow-me/rainbowkit/styles.css";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "N.FesT",

@@ -1,7 +1,10 @@
 import Card from "../../core/Card/index";
-import Payment from "../../layouts/Payment/index";
 
-export default function DetailEvent() {
+export default function DetailEvent({
+  children,
+}: {
+  children?: React.ReactNode;
+}) {
   return (
     <div className="relative flex flex-col min-h-[80vh] ">
       <div className="absolute min-h-[80vh] items-center flex justify-center gap-16 mx-16">
@@ -15,9 +18,7 @@ export default function DetailEvent() {
         </div>
       </div>
       <div className="bg-[#333232] min-h-[40vh]"></div>
-      <div className="mb-32 mt-[365px]">
-        <Payment></Payment>
-      </div>
+      <div className="mb-32 mt-[365px]">{children}</div>
     </div>
   );
 }

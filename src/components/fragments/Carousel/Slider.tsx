@@ -9,16 +9,15 @@ export default function SliderComp() {
   let settings = {
     className: "center",
     centerMode: true,
+    snapToGrid: false,
+    swipeToSlide: true,
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
