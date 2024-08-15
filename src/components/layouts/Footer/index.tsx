@@ -13,7 +13,7 @@ export default function Footer() {
     <div className="bg-black bg-opacity-[40%] h-[237px] flex flex-col">
       <div className="flex justify-between m-auto min-w-full px-[67px] overflow-x-hidden">
         <div className="text-white">
-          <NFest color="text-[#9146FF]"></NFest>
+          <NFest></NFest>
           <p className="text-[24px] py-3">
             Live in the moment, dance to the beat!
           </p>
