@@ -10,9 +10,6 @@ export default function ChatbotPage() {
       <ChatbotContainer>
         <Message></Message>
         <Message user={true}></Message>
-        <Message></Message>
-        <Message user={true}></Message>
-        <Message></Message>
       </ChatbotContainer>
       <ChatBotInput></ChatBotInput>
     </div>
