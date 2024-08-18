@@ -1,5 +1,6 @@
 import Card from "../../core/Card/index";
 import NFest from "../../core/Label/NFest";
+import "@/app/assets/css/chatbot.css"
 
 type Props = {
   children?: any;
@@ -7,7 +8,7 @@ type Props = {
 
 export default function ChatbotContainer({ children }: Props) {
   return (
-    <div className="flex flex-col overflow-y-auto max-h-[79vh]">
+    <div className="flex flex-col overflow-y-auto max-h-[79vh] custom-scrollbar">
       <div className="mb-5 flex flex-col justify-center items-center min-h-[80vh] my-auto">
         <Card size="w-[452px] h-[190px]"></Card>
         <NFest classname="mt-5">
