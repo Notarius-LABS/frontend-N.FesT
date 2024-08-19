@@ -1,13 +1,24 @@
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
-export default function SeeAll({ children }: { children: React.ReactNode }) {
+type Props = {
+  isText: string;
+  children: React.ReactNode;
+};
+
+export default function SeeAll({ isText, children }: Props) {
   return (
-    <>
-      <p className="text-[20px] flex gap-2 text-[#EC78FF]">
+    <Link
+      href={`${
+        (isText === "Coming Soon" && "/event/detail/comingsoon") ||
+        (isText === "Merchandise" && "/event/detail/merchandise")
+      }`}
+    >
+      <p className="text-[20px] flex items-center gap-2 text-[#EC78FF]">
         {children}
-        <FontAwesomeIcon icon={faChevronRight} className="w-3 pb-2" />
+        <FontAwesomeIcon icon={faChevronRight} className="w-3" />
       </p>
-    </>
+    </Link>
   );
 }

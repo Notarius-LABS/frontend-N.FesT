@@ -1,45 +1,45 @@
 .custom-scrollbar::-webkit-scrollbar {
-    width: 10px;
-  }
-  
+  width: 10px;
+}
+
 .custom-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 10px;
+  background: transparent;
+  border-radius: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #2F2F2F;
-    border-radius: 10px;
+  background: #2f2f2f;
+  border-radius: 10px;
 }
-  
+
 .skeleton-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .skeleton-line {
-    background: linear-gradient(90deg, #676767 35%, #2F2F2F 60%, #676767 85%);
-    background-size: 200% 100%;
-    animation: skeleton-animation 1.5s infinite;
-    height: 1.2rem;
-    margin: 2px 0;
-    border-radius: 4px;
+  background: linear-gradient(90deg, #676767 35%, #2f2f2f 60%, #676767 85%);
+  background-size: 200% 100%;
+  animation: skeleton-animation 1.5s infinite;
+  height: 1.2rem;
+  margin: 2px 0;
+  border-radius: 4px;
 }
 
 .skeleton-line {
-    width: 500px;
+  width: 500px;
 }
 
 .skeleton-line:last-child {
-    width: 440px;
+  width: 440px;
 }
 
 @keyframes skeleton-animation {
-    0% {
-        background-position: 200% 0;
-    }
-    100% {
-        background-position: -200% 0;
-    }
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }

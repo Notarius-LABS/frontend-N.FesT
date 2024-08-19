@@ -16,7 +16,6 @@ export default function Message({ user, text }: Props) {
             className="text-xl text-justify"
             dangerouslySetInnerHTML={{ __html: text || "Invalid" }}
           />
-  
         </div>
       </div>
     </div>
