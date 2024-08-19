@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import Send from "../Button/Send";
+import { useEffect, useRef } from "react";
+import "@/app/assets/css/input.css";
 
 type Props = {
   value?: string;
