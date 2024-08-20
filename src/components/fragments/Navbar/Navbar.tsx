@@ -10,7 +10,7 @@ export default function Navbar() {
           <Link href="/">
             <p className="hover:text-[#6BCAFF]">Home</p>
           </Link>
-          <Link href="/event/order">
+          <Link href="/profile">
             <p className="hover:text-[#6BCAFF]">My Order</p>
           </Link>
           <Link href="/chatbot">

@@ -7,9 +7,9 @@ type Props = {
   children: React.ReactNode;
 };
 
-export default function ContainerCard({ text, children }: Props) {
+export default function CardContainer({ text, children }: Props) {
   return (
-    <div className="h-[428px] flex flex-col justify-between items-center  overflow-x-hidden my-auto">
+    <div className=" flex flex-col items-center overflow-x-hidden my-auto gap-y-10">
       <div className="flex justify-between text-white w-[1335px] mx-auto">
         <p className="font-bold text-[24px]">{text}</p>
         <SeeAll isText={text}>See all</SeeAll>

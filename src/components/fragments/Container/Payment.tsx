@@ -46,7 +46,7 @@ export default function PaymentContainer(props: any) {
 
   return (
     <div
-      className={`min-h-[114px] bg-white bg-opacity-10 text-white mx-auto max-w-[68%] rounded-2xl px-12 flex flex-col mb-4`}
+      className={`bg-white bg-opacity-10 text-white mx-auto max-w-[92%] rounded-2xl px-12 flex flex-col mb-4`}
     >
       <div className="flex items-center justify-between h-28">
         <div>

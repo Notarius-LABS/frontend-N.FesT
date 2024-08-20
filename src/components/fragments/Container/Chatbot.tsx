@@ -1,4 +1,3 @@
-import Card from "../../core/Card/index";
 import NFest from "../../core/Label/NFest";
 import "@/app/assets/css/chatbot.css";
 

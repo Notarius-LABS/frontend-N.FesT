@@ -1,4 +1,4 @@
-import Card from "../../core/Card/index";
+import Card from "../../core/Card/Card";
 
 export default function DetailEvent({
   children,
@@ -8,7 +8,7 @@ export default function DetailEvent({
   return (
     <div className="relative flex flex-col min-h-[80vh] ">
       <div className="absolute min-h-[80vh] items-center flex justify-center gap-16 mx-16">
-        <Card></Card>
+        <Card size="w-[330px] h-[441px]"></Card>
         <div className="text-white pt-12">
           <h1 className="font-bold text-[48px]">
             THE SOUND OF <br /> THE PROJECT 2024
