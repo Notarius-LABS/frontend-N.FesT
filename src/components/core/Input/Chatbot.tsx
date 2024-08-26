@@ -31,7 +31,7 @@ export default function ChatBotInput({
       <div className="absolute bottom-0 px-5 py-2 bg-zinc-700 rounded-[35px] mb-[3rem] border border-white">
         <div className="flex items-center justify-center gap-5 px-2">
           <textarea
-            className="min-w-[950px] m-0 resize-none border-0 bg-transparent px-0 text-white focus:outline-none focus-visible:ring-0 max-h-[25dvh] text-[25px] py-2 leading-0 h-full flex-1 grow"
+            className="min-w-[950px] m-0 resize-none border-0 bg-transparent px-0 text-white focus:outline-none focus-visible:ring-0 max-h-[25dvh] text-[15px] py-2 leading-0 h-full flex-1 grow"
             value={value}
             onChange={onChange}
             ref={textAreaRef}

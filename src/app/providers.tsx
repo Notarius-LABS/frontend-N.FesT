@@ -18,7 +18,6 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
   return (
     <WagmiProvider config={config}>
-      {" "}
       {/* Use WagmiProvider */}
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider appInfo={demoAppInfo}>
