@@ -10,7 +10,7 @@ export default function Send({ onSend }: Props) {
     <>
       <button
         onClick={onSend}
-        className="text-[28px] text-white self-start mt-1"
+        className="text-[20px] text-white self-start mt-1"
       >
         <FontAwesomeIcon icon={faPaperPlane} />
       </button>
