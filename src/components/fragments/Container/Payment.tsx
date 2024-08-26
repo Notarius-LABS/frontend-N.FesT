@@ -6,7 +6,7 @@ import {
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import PaymentCard from "../../core/Card/Payment";
 import Link from "next/link";
 import PaymentDropdown from "../../core/Dropdown/Payment";
@@ -17,10 +17,19 @@ export default function PaymentContainer(props: any) {
   const [showPaymentPlatinum, setShowPaymentPlatinum] = useState(false);
   const [showPaymentGold, setShowPaymentGold] = useState(false);
   const [showPaymentReguler, setShowPaymentReguler] = useState(false);
+  const transitionRef = useRef<HTMLDivElement>(null);
 
   const handleDropdown = (e: any) => {
     e.preventDefault();
     setDropdown(!dropdown);
+    //// blm fix
+    // if(transitionRef.current) {
+    //   transitionRef.current.classList.toggle("transition");
+    //   transitionRef.current.classList.toggle("duration-[2000ms]");
+    //   transitionRef.current.classList.toggle("ease-in-out");
+    //   transitionRef.current.classList.toggle("h-auto");
+    //   transitionRef.current.classList.toggle("overflow-y-hidden");
+    // }
   };
 
   const handlePaymentPlatinum = (e: any) => {
@@ -46,7 +55,7 @@ export default function PaymentContainer(props: any) {
 
   return (
     <div
-      className={`min-h-[114px] bg-white bg-opacity-10 text-white mx-auto max-w-[68%] rounded-2xl px-12 flex flex-col mb-4`}
+      className={`bg-white bg-opacity-10 text-white mx-auto max-w-[92%] rounded-2xl px-12 flex flex-col mb-4`}
     >
       <div className="flex items-center justify-between h-28">
         <div>
@@ -54,7 +63,7 @@ export default function PaymentContainer(props: any) {
           <p className="text-[20px]">17 Agustus 2024</p>
         </div>
         <button onClick={handleDropdown}>
-          <div className="flex items-center text-[24px] gap-3">
+          <div className={`flex items-center text-[24px] gap-3`}>
             <p>Mall Kelapa Gading</p>
             {dropdown ? (
               <FontAwesomeIcon icon={faChevronDown} className="w-5" />
@@ -65,8 +74,8 @@ export default function PaymentContainer(props: any) {
         </button>
       </div>
       {dropdown === true && (
-        <div className="">
-          <div className="flex items-center justify-center gap-4 h-[198px] ">
+        <div className="" /* ref={transitionRef} */>
+          <div className="flex items-center justify-center gap-7 h-[198px] ">
             <PaymentCard
               color="bg-[#9AE7FF]"
               textColor="text-[#9AE7FF]"

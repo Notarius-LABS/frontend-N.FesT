@@ -1,5 +1,5 @@
-import Navbar from "../../../components/fragments/Navbar/Navbar";
-import DetailEvent from "../../../components/fragments/Detail/index";
+import Navbar from "../../../components/fragments/Navbar/index";
+import DetailEvent from "../../../components/fragments/Detail/Event";
 import Footer from "../../../components/layouts/Footer/index";
 import Payment from "@/components/layouts/Payment";
 

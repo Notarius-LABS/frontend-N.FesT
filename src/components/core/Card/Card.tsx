@@ -1,16 +1,20 @@
-import Card from "./index";
+type Props = {
+  label?: boolean;
+  size?: string;
+  text?: string;
+  profile?: boolean;
+};
 
-export default function CardContainer(props: any) {
-  const { label = true, size = "w-[240px] h-[310px]" } = props;
+export default function Card({ label = false, size, text, profile = false}: Props) {
   return (
     <div
-      className={`h-[350px] text-white text-center flex flex-col justify-between mx-[18px]`}
+      className={`text-white text-center ${
+        !profile && "m-[18px]"
+      } cursor-pointer`}
     >
-      <Card size={size}></Card>
+      <div className={`${size} mx-auto bg-[#D9D9D9] rounded-xl project`}></div>
       {label && (
-        <p className="text-[16px] mx-auto w-28 mt-8">
-          The Sound of The Project
-        </p>
+        <p className="text-[16px] mx-auto w-28 mt-8">{text || "lorem ipsum"}</p>
       )}
     </div>
   );

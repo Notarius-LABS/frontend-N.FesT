@@ -2,7 +2,7 @@
 
 import Slider from "react-slick";
 import { useRef } from "react";
-import Card from "../../core/Card/index";
+import Card from "@/components/core/Card/Card";
 
 export default function SliderComp() {
   const sliderRef = useRef(null);
@@ -49,11 +49,11 @@ export default function SliderComp() {
   return (
     <>
       <Slider ref={sliderRef} {...settings}>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Card size="w-[330px] h-[420px]"></Card>
+        <Card size="w-[330px] h-[420px]"></Card>
+        <Card size="w-[330px] h-[420px]"></Card>
+        <Card size="w-[330px] h-[420px]"></Card>
+        <Card size="w-[330px] h-[420px]"></Card>
       </Slider>
     </>
   );

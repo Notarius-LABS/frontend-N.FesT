@@ -1,15 +1,14 @@
 import { PropsWithChildren } from "react";
-import SeeAll from "../../core/Label/SeeAll";
-import Link from "next/link";
+import SeeAll from "@/components/core/Label/SeeAll";
 
 type Props = {
   text: string;
   children: React.ReactNode;
 };
 
-export default function ContainerCard({ text, children }: Props) {
+export default function CardContainer({ text, children }: Props) {
   return (
-    <div className="h-[428px] flex flex-col justify-between items-center  overflow-x-hidden my-auto">
+    <div className="flex flex-col items-center overflow-x-hidden gap-y-10 my-12">
       <div className="flex justify-between text-white w-[1335px] mx-auto">
         <p className="font-bold text-[24px]">{text}</p>
         <SeeAll isText={text}>See all</SeeAll>

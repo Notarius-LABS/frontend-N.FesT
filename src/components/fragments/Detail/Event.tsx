@@ -1,14 +1,14 @@
-import Card from "../../core/Card/index";
+import Card from "../../core/Card/Card";
 
-export default function DetailEvent({
-  children,
-}: {
-  children?: React.ReactNode;
-}) {
+type Props = {
+  children?: React.ReactNode,
+}
+
+export default function DetailEvent({ children }: Props) {
   return (
-    <div className="relative flex flex-col min-h-[80vh] ">
+    <div className="relative flex flex-col">
       <div className="absolute min-h-[80vh] items-center flex justify-center gap-16 mx-16">
-        <Card></Card>
+        <Card size="w-[330px] h-[441px]"></Card>
         <div className="text-white pt-12">
           <h1 className="font-bold text-[48px]">
             THE SOUND OF <br /> THE PROJECT 2024

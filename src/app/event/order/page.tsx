@@ -1,6 +1,6 @@
 "use client";
 
-import Navbar from "../../../components/fragments/Navbar/Navbar";
+import Navbar from "../../../components/fragments/Navbar/index";
 import Highlight from "../../../components/fragments/Highlight/index";
 import EventRegister from "@/components/fragments/Auth/Register/Event";
 
