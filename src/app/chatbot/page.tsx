@@ -1,9 +1,9 @@
 "use client";
 
-import Navbar from "@/components/fragments/Navbar/Navbar";
-import ChatbotContainer from "../../components/fragments/Container/Chatbot";
-import ChatBotInput from "../../components/core/Input/Chatbot";
-import Message from "../../components/core/Label/Message";
+import Navbar from "@/components/fragments/Navbar/index";
+import ChatbotContainer from "@/components/fragments/Container/Chatbot";
+import ChatBotInput from "@/components/core/Input/Chatbot";
+import Message from "@/components/core/Label/Message";
 
 import { chatBot } from "@/app/chatbot/api/llm";
 import { useState } from "react";

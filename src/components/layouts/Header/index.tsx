@@ -1,4 +1,4 @@
-import Navbar from "../../fragments/Navbar/Navbar";
+import Navbar from "../../fragments/Navbar/index";
 import Highlight from "../../fragments/Highlight";
 import Carousel from "../../fragments/Carousel";
 

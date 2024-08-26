@@ -8,13 +8,13 @@ export default function Navbar() {
         <NFest></NFest>
         <div className="flex gap-16">
           <Link href="/">
-            <p className="hover:text-[#6BCAFF]">Home</p>
+            <p className="hover:text-[#6BCAFF] hover:duration-700">Home</p>
           </Link>
           <Link href="/profile">
-            <p className="hover:text-[#6BCAFF]">My Order</p>
+            <p className="hover:text-[#6BCAFF] hover:duration-700">My Order</p>
           </Link>
           <Link href="/chatbot">
-            <p className="hover:text-[#6BCAFF]">Chat bot</p>
+            <p className="hover:text-[#6BCAFF] hover:duration-700">Chat bot</p>
           </Link>
         </div>
       </div>

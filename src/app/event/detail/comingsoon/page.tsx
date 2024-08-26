@@ -1,6 +1,6 @@
 "use client";
 
-import Navbar from "@/components/fragments/Navbar/Navbar";
+import Navbar from "@/components/fragments/Navbar/index";
 import Highlight from "../../../../components/fragments/Highlight/index";
 import Footer from "../../../../components/layouts/Footer/index";
 import DetailCard from "../../../../components/fragments/Detail/Card";
@@ -12,7 +12,7 @@ export default function ComingsoonPage() {
       <Highlight></Highlight>
       <DetailCard
         text="Coming Soon"
-        size="w-[300px] h-[370px]"
+        size="w-[210px] h-[280px]"
         label={true}
       ></DetailCard>
       <Footer></Footer>
