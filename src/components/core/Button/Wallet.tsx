@@ -1,6 +1,10 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
-export default function WalletButton() {
+type Props = {
+  color?: string
+}
+
+export default function WalletButton({color = 'bg-[#EC78FF]'}: Props) {
   return (
     <>
       <ConnectButton.Custom>
@@ -33,7 +37,7 @@ export default function WalletButton() {
                 if (!connected) {
                   return (
                     <button
-                      className="bg-[#EC78FF] rounded-full py-4 px-[55px] text-black"
+                      className={`${color} rounded-full py-4 px-[55px] text-black`}
                       onClick={openConnectModal}
                       type="button"
                     >
@@ -53,7 +57,7 @@ export default function WalletButton() {
                 return (
                   <div style={{ display: "flex", gap: 12 }}>
                     <button
-                      className="bg-[#EC78FF] rounded-full py-3 px-[25px] text-black"
+                      className={`${color} rounded-full py-3 px-[25px] text-black`}
                       onClick={openChainModal}
                       style={{ display: "flex", alignItems: "center" }}
                       type="button"
@@ -82,7 +86,7 @@ export default function WalletButton() {
                     </button>
 
                     <button
-                      className="bg-[#EC78FF] rounded-full py-3 px-[25px] text-black"
+                      className={`${color} rounded-full py-3 px-[25px] text-black`}
                       onClick={openAccountModal}
                       type="button"
                     >

@@ -2,11 +2,8 @@
 
 import * as React from "react";
 import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
-
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-
 import { WagmiProvider } from "wagmi";
-
 import config from "@/lib/config";
 
 const demoAppInfo = {
