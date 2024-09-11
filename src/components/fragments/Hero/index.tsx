@@ -17,14 +17,14 @@ export default function Hero({
         <p className="text-[30px] font-[600] text-gradient">{text}</p>
         {description && (
           <p className="text-[20px] font-[300]">
-            Let's login to capture the euforia
+            Let&apos;s login to capture the euforia
           </p>
         )}
       </div>
       {button && (
-      <div className="flex items-center justify-center ">
-        <WalletButton></WalletButton>
-      </div>
+        <div className="flex items-center justify-center ">
+          <WalletButton></WalletButton>
+        </div>
       )}
     </div>
   );

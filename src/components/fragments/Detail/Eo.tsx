@@ -9,11 +9,11 @@ export default function DetailEo({ children }: Props) {
     <div className="relative flex flex-col">
       <div className="absolute min-h-[80vh] items-center flex justify-between gap-16 mx-16">
         <Card size="w-[330px] h-[441px]"></Card>
-        <div className="text-white flex flex-col justify-between gap-y-14">
-          <div className="h-10">
-            <p className="font-bold text-[48px]">Amirullah Hamdan zarkashi</p>
+        <div className="text-white flex flex-col justify-between gap-y-20">
+          <div className="h-10 ">
+            <p className="font-bold text-[48px] pt-7">Amirullah <br /> Hamdan zarkashi</p>
           </div>
-          <div className="h-10">
+          <div className="h-10 pt-20">
             <p className="text-[20px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
               ex placeat illum velit, magnam nostrum laudantium veritatis. Autem

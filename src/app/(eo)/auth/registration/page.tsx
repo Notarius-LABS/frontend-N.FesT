@@ -1,11 +1,12 @@
-"use client";
+'use client'
 
+import RegistrationButton from "@/components/core/Button/Registration";
+import DataInput from "@/components/core/Input/Data"
 import NFest from "@/components/core/Label/NFest";
-import DataInput from "@/components/core/Input/Data";
 import DataTextarea from "@/components/core/Textarea/Data";
-import WalletButton from "@/components/core/Button/Wallet";
 
-export default function EoRegistration() {
+
+export default function RegistrationPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       <NFest
@@ -14,11 +15,13 @@ export default function EoRegistration() {
       >
         <p className="text-white text-[32px]">Registration</p>
       </NFest>
+
       <DataInput></DataInput>
       <DataTextarea></DataTextarea>
-      <div className="flex">
+      <div className="flex mb-6">
         <DataInput size="h-[62px] w-[506px]" walletButton={true}></DataInput>
       </div>
+      <RegistrationButton></RegistrationButton>
     </div>
   );
 }

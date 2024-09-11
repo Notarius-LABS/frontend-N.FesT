@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
-import PaymentButton from "../../../core/Button/Payment";
+import PaymentButton from "../../core/Button/Payment";
 
-export default function EventRegister() {
+export default function EventOrder() {
   return (
     <div className="text-white min-h-[60vh] flex items-center justify-center">
       <div className="max-w-3xl mx-auto ">

@@ -11,8 +11,6 @@ export default function EoProfile() {
         <EditContainer></EditContainer>
         <EditContainer></EditContainer>
       </div>
-
-      <Footer></Footer>
     </DetailEo>
   );
 }

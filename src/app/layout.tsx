@@ -9,6 +9,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 import "@rainbow-me/rainbowkit/styles.css";
 import { Providers } from "./providers";
+import Navbar from "@/components/fragments/Navbar";
 
 export const metadata: Metadata = {
   title: "N.FesT",
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.className} bg-gradient-to-r from-[#030303] to-[#111340]`}
       >
+        {/* <Navbar></Navbar> */}
         <Providers>{children}</Providers>
       </body>
     </html>
