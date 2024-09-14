@@ -10,6 +10,7 @@ export default function ComingsoonPage() {
       <DetailCard
         text="Coming Soon"
         size="w-[210px] h-[280px]"
+        cols="grid-cols-5"
         label={true}
       ></DetailCard>
     </div>

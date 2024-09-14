@@ -15,7 +15,7 @@ export default function PaymentButton({ price, href }: Props) {
     <>
       <Link href={`${href}`}>
         <button
-          className={`bg-[#EC78FF] bg-opacity-10 outline outline-[#EC78FF] rounded-full py-4 px-[55px] price-black w-[314px] h-[62px] flex items-center gap-5 justify-center mt-9`}
+          className={`price-black mt-9 flex h-[62px] w-[314px] items-center justify-center gap-5 rounded-full bg-[#EC78FF] bg-opacity-10 px-[55px] py-4 outline outline-[#EC78FF] duration-300 hover:bg-[#ea87f9]`}
         >
           <svg
             width="32"

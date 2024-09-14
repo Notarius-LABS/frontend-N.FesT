@@ -10,6 +10,7 @@ export default function MerchandisePage() {
       <DetailCard
         text="Merchandise"
         size="w-[400px] h-[200px]"
+        cols="grid-cols-3"
         label={false}
       ></DetailCard>
     </div>

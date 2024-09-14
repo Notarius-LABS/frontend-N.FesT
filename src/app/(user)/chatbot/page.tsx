@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
 import Navbar from "@/components/fragments/Navbar/index";
 import ChatbotContainer from "@/components/fragments/Container/Chatbot";
 import ChatBotInput from "@/components/core/Input/Chatbot";
 import Message from "@/components/core/Label/Message";
 
-import { chatBot } from "@/app/chatbot/api/llm"
+import { chatBot } from "./api/llm";
 import { useState } from "react";
 
 export default function ChatbotPage() {
-  const { chatHistory, callConversation } = chatBot(); 
+  const { chatHistory, callConversation } = chatBot();
   const [inputMessage, setInputMessage] = useState("");
 
   const handleSendMessage = () => {
@@ -20,7 +20,7 @@ export default function ChatbotPage() {
   };
 
   return (
-    <div className="min-h-screen relative">
+    <div className="relative min-h-screen">
       <Navbar></Navbar>
 
       <ChatbotContainer>
@@ -29,12 +29,11 @@ export default function ChatbotPage() {
         ))}
       </ChatbotContainer>
 
-      <ChatBotInput 
-        value={inputMessage} 
+      <ChatBotInput
+        value={inputMessage}
         onChange={(e) => setInputMessage(e.target.value)}
         onSend={handleSendMessage}
       />
-
     </div>
   );
 }

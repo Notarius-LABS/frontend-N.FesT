@@ -4,18 +4,22 @@ import Card from "@/components/core/Card/Card";
 
 export default function Body() {
   return (
-    <div className="min-h-[90vh] flex flex-col justify-between">
+    <div className="flex min-h-[90vh] flex-col justify-between">
       <ContainerCard text="Coming Soon">
-        <Card label={true} size="w-[240px] h-[310px]"></Card>
-        <Card label={true} size="w-[240px] h-[310px]"></Card>
-        <Card label={true} size="w-[240px] h-[310px]"></Card>
-        <Card label={true} size="w-[240px] h-[310px]"></Card>
-        <Card label={true} size="w-[240px] h-[310px]"></Card>
+        <div className="grid grid-cols-5 gap-14">
+          <Card label={true} size="w-[210px] h-[280px]"></Card>
+          <Card label={true} size="w-[210px] h-[280px]"></Card>
+          <Card label={true} size="w-[210px] h-[280px]"></Card>
+          <Card label={true} size="w-[210px] h-[280px]"></Card>
+          <Card label={true} size="w-[210px] h-[280px]"></Card>
+        </div>
       </ContainerCard>
       <ContainerCard text="Merchandise">
-        <Card label={false} size="w-[425px] h-[230px]"></Card>
-        <Card label={false} size="w-[425px] h-[230px]"></Card>
-        <Card label={false} size="w-[425px] h-[230px]"></Card>
+        <div className="grid grid-cols-3 gap-9">
+          <Card label={false} size="w-[400px] h-[200px]"></Card>
+          <Card label={false} size="w-[400px] h-[200px]"></Card>
+          <Card label={false} size="w-[400px] h-[200px]"></Card>
+        </div>
       </ContainerCard>
     </div>
   );

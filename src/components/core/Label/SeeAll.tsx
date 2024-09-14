@@ -15,7 +15,7 @@ export default function SeeAll({ isText, children }: Props) {
         (isText === "Merchandise" && "/event/detail/merchandise")
       }`}
     >
-      <p className="text-[20px] flex items-center gap-2 text-[#EC78FF]">
+      <p className="flex items-center gap-2 text-[20px] text-[#EC78FF] duration-300 hover:text-[#ea87f9]">
         {children}
         <FontAwesomeIcon icon={faChevronRight} className="w-3" />
       </p>

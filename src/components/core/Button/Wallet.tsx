@@ -4,7 +4,9 @@ type Props = {
   color?: string
 }
 
-export default function WalletButton({color = 'bg-[#EC78FF]'}: Props) {
+export default function WalletButton({
+  color = "bg-[#EC78FF] duration-300 hover:bg-[#ea87f9]",
+}: Props) {
   return (
     <>
       <ConnectButton.Custom>
@@ -37,7 +39,7 @@ export default function WalletButton({color = 'bg-[#EC78FF]'}: Props) {
                 if (!connected) {
                   return (
                     <button
-                      className={`${color} rounded-full py-4 px-[55px] text-black`}
+                      className={`${color} rounded-full px-[55px] py-4 text-black`}
                       onClick={openConnectModal}
                       type="button"
                     >
@@ -57,7 +59,7 @@ export default function WalletButton({color = 'bg-[#EC78FF]'}: Props) {
                 return (
                   <div style={{ display: "flex", gap: 12 }}>
                     <button
-                      className={`${color} rounded-full py-3 px-[25px] text-black`}
+                      className={`${color} rounded-full px-[25px] py-3 text-black`}
                       onClick={openChainModal}
                       style={{ display: "flex", alignItems: "center" }}
                       type="button"
@@ -86,7 +88,7 @@ export default function WalletButton({color = 'bg-[#EC78FF]'}: Props) {
                     </button>
 
                     <button
-                      className={`${color} rounded-full py-3 px-[25px] text-black`}
+                      className={`${color} rounded-full px-[25px] py-3 text-black`}
                       onClick={openAccountModal}
                       type="button"
                     >

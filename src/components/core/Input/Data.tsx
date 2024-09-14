@@ -38,11 +38,15 @@ export default function DataInput({
         </div>
         {type === "file" && (
           <div
-            className={`absolute flex cursor-pointer items-center justify-center rounded-full hover:bg-gray-100 hover:bg-opacity-10 ${size}`}
+            className={`absolute rounded-full duration-300 hover:bg-gray-100 hover:bg-opacity-10`}
           >
-            <label htmlFor={name} className="flex cursor-pointer">
+            <label
+              htmlFor={name}
+              className={`flex cursor-pointer items-center justify-center ${size}`}
+            >
               <FontAwesomeIcon icon={faSquarePlus} className="mr-3 w-5" />
-              <p>Poster Upload</p>
+              {name !== "ticket" && <p>Poster Upload</p>}
+              {name === "ticket" && <p>Upload Ticket Design</p>}
             </label>
           </div>
         )}
